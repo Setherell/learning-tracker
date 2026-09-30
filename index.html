@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Test Title</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
@@ -10,9 +11,9 @@
         </header>
         <br>
 
-        <main>
+        <main class="wrapper">
             <!-- A section for the form -->
-            <section>
+            <section class="col1">
                 <form>
                     <h3>Add an Activity</h3>
                     <p>
@@ -50,59 +51,52 @@
             </section>
             <br>
 
-            <!-- A section for the activity list -->
-            <section>
+            <!-- A section for the activity list and summary -->
+            <section class="col2">
                 <h3>Activity List</h3>
-                <ol>
-                    <li>
-                        <ul>
-                            <li>Title: HTML Forms</li>
-                            <li>Topic: Web Development</li>
-                            <li>Minutes: 45</li>
-                            <li>Date: 2026-09-28</li>
-                            <li>Status: Completed</li>
-                            <li>Reflection: </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>Title: React Components</li>
-                            <li>Topic: React</li>
-                            <li>Minutes: 60</li>
-                            <li>Date: 2026-09-28</li>
-                            <li>Status: In Progress</li>
-                            <li>Reflection: </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>Title: Rust Ownership</li>
-                            <li>Topic: Rust</li>
-                            <li>Minutes: 90</li>
-                            <li>Date: 2026-09-28</li>
-                            <li>Status: Planned</li>
-                            <li>Reflection: </li>
-                        </ul>
-                    </li>
-                </ol>
-            </section>
-            <br>
+                <section class="activitylist">
+                    <article>
+                        <p>Title: HTML Forms</p>
+                        <p>Topic: Web Development</p>
+                        <p>Minutes: 45</p>
+                        <p>Date: 2026-09-28</p>
+                        <p>Status: Completed</p>
+                        <p>Reflection: </p>
+                    </article>
+                    <article>
+                        <p>Title: React Components</p>
+                        <p>Topic: React</p>
+                        <p>Minutes: 60</p>
+                        <p>Date: 2026-09-28</p>
+                        <p>Status: In Progress</p>
+                        <p>Reflection: </p>
+                    </article>
+                    <article>
+                        <p>Title: Rust Ownership</p>
+                        <p>Topic: Rust</p>
+                        <p>Minutes: 90</p>
+                        <p>Date: 2026-09-28</p>
+                        <p>Status: Planned</p>
+                        <p>Reflection: </p>
+                    </article>
+                </section>
+                <br>
 
-            <!-- A section for the summary -->
-            <section>
                 <h3>Summary</h3>
-                <ul>
-                    <li>Recorded Minutes: 195 minutes</li>
-                    <li>Number of Activities: 3</li>
-                    <li>Number Completed: 1</li>
-                </ul>
+                <section class="summary">
+                    <article>
+                        <p>Recorded Minutes: 195 minutes</p>
+                        <p>Number of Activities: 3</p>
+                        <p>Number Completed: 1</p>
+                    </article>
+                </section>
             </section>
             <br>
 
         </main>
 
         <footer>
-            <p>All rights are reserved or something.</p>
+            All rights are reserved or something.
         </footer>
 
     </body>
